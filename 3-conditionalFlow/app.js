@@ -12,6 +12,7 @@
 //   // the code inside the second block will run
 // }
 
+
 // Example 1
 if (true) {
   console.log("I am learning control flow in js");
@@ -61,10 +62,10 @@ console.log("totalLength =", totalLength);
 
 if (totalLength % 3 !== 0) {
   console.log("This is my new course to learn");
-} else if (totalLength % 3 > 0) {
+} else if (totalLength % 3 == 0) {
   console.log("This is just the normal divison");
 } else {
-  console.log("There is no ideal");
+  console.log("There is no idea");
 }
 
 /**
@@ -169,7 +170,6 @@ switch (roundUp) {
  * Example 9
  * switch statement
  */
-
 const time = new Date();
 console.log("time", time);
 
@@ -220,7 +220,7 @@ switch (roundUpDiceFace) {
 /**
  * Ternary Operator
  */
-// condition ? "do something" : "do another thing";
+condition ? "do something" : "do another thing";
 
 // condition? console.log("hello ternary") : console.log("dont bother to say hello")
 
