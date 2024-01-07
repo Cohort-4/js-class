@@ -74,15 +74,20 @@ console.log(fullStacKStudents);
 const myFavoriteFood = ["Oha", "Bean", "Rice", "Amala", "Yam"];
 
 const sliceMyFavoriteFood = myFavoriteFood.slice(1, 3);
-console.log(sliceMyFavoriteFood);
+console.log("sliceMyFavoriteFood", sliceMyFavoriteFood);
 
 /**
  * Methods in an Array
  * .split()
+ * Split a string into substrings using the specified separator 
+ * and return them as an array.
+ * @param separator — A string that identifies character or characters 
+ * to use in separating the string. If omitted, a single-element array 
+ * containing the entire string is returned.
  */
 
 let myName = "omokehinde";
-let splitMyName = myName.split();
+let splitMyName = myName.split("");
 
 console.log("splitMyName = ", splitMyName);
 
@@ -92,8 +97,12 @@ console.log("splitMyNameAgain = ", splitMyNameAgain);
 /**
  * Methods in an Array
  * .join()
+ * Adds all the elements of an array into a string, separated by the specified separator string.
+ * @param separator — A string used to separate one element of the 
+ * array from the next in the resulting string. 
+ * If omitted, the array elements are separated with a comma.
  */
-let joinMyName = splitMyNameAgain.join("");
+let joinMyName = splitMyNameAgain.join();
 console.log("joinMyName = ", joinMyName);
 
 /**
@@ -143,7 +152,8 @@ console.log(myTraineeList.includes("Khalid".toLowerCase(), 0)); // true
  */
 
 const countries = ["Nigeria", "Togo", "Ghana", "Chad", "Tunsia", "Haiti"];
-console.log(countries.splice(0, 3)); // [ 'Nigeria', 'Togo' ] elements deleted.
+console.log("countriesResult", countries.splice(0, 3)); // [ 'Nigeria', 'Togo', 'Ghana ] elements deleted.
+console.log('countries ', countries )
 
 /**
  * .sort()

@@ -1,0 +1,6 @@
+1. flex               // Establishes a flex container.
+2. flex-col           // Sets the flex direction to column.
+3. gap-6              // Defines a gap of size 6 between flex items.
+4. md:gap-6           // Applies the gap-6 utility at the medium breakpoint.
+5. lg:gap-[30px]      // Applies a custom gap of 30 pixels at the large breakpoint.
+6. lg:flex-row        // Changes flex direction to row at the large breakpoint.
