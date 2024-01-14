@@ -5,11 +5,17 @@
  * An object-oriented programming (OOP) in JavaScript
  * can be used to model real-world examples
  * To create a class, we write the class keyword
- * followed by class name and curly brace with the first letter
+ * followed by class name and curly brace with the first letter of the class name
  * capitalize
  */
 
-class MarusoftDigitalSkills4 {}
+class MarusoftDigitalSkills4 {
+
+}
+class MyProfile {
+  
+
+}
 
 /**
  * Constructor
