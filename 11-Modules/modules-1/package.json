@@ -1,0 +1,22 @@
+{
+  "name": "modules-1",
+  "version": "1.0.0",
+  "description": "learning the es6 import and export default keyword",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "import",
+    "JS-modules",
+    "export",
+    "default",
+    "es6"
+  ],
+  "author": "alimi kehinde",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

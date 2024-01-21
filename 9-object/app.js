@@ -369,6 +369,15 @@ const myTask = {
 const myDailyTask = Object.keys(myTask);
 console.log("myDailyTask =", myDailyTask); // [ 'monday', 'tuesday', 'wednesday' ]
 
+let myObject = new Object(
+  Object.keys({
+    name: "John",
+    class: "jss1",
+    radius: 3,
+    sex: "male",
+  })
+);
+console.log(myObject) // [ 'name', 'class', 'radius', 'sex' ]
 
 /**
  * Object.entries()
