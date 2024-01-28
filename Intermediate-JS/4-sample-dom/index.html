@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitionend EVENT</title>
+
+    <style>
+      #info {
+        border: 2px solid rebeccapurple;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        /* extending the duration of the hover effect */
+        transition: 3s;
+      }
+      #info:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="info">Hello DOM event</div>
+
+    <script>
+      const info = document.getElementById("info");
+      info.addEventListener("transitionend", test);
+      function test() {
+        // do the following when the transition is completed after 3s
+        info.innerText = "Hello hello hello";
+        info.style.background = "blue";
+        info.style.color = "red";
+      }
+    </script>
+  </body>
+</html>

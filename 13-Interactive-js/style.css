@@ -1,0 +1,16 @@
+.button-wrapper {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  padding: 10px 30px;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
