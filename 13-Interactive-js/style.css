@@ -1,5 +1,5 @@
 .button-wrapper {
-  min-height: 70vh;
+  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,5 +12,22 @@
   color: white;
   background-color: dodgerblue;
   border-radius: 5px;
+  cursor: pointer;
+}
+form {
+  margin-top: 1rem;
+}
+input {
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  position: relative;
+
+}
+img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 250px;
+  top: 170px;
   cursor: pointer;
 }

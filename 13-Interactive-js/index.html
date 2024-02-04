@@ -7,9 +7,87 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-  <section class="button-wrapper">
+    <!-- get element by id section  -->
+    <section class="button-wrapper">
       <button id="button" onclick="changeBackground()">Click me</button>
-  </section>
+    </section>
+
+    <!-- 
+     3. create a button with a text 'send me' and apply the necessary button stylying to it Example, border, padding, border-radius, bg, and add onclick event to the button -->
+
+    <button id="send-me">Send me</button>
+
+    <!-- set show password -->
+    <form>
+      <input type="password" id="password" placeholder="enter password" />
+      <img src="./eye-close.png" alt="eye" id="eye" onclick="hideAndShow()" />
+    </form>
+
+    <!-- get element by classname section  -->
+
+    <h2>my lists</h2>
+    <ul class="lists">
+      <li class="list-item">some items</li>
+      <li class="list-item">some items</li>
+      <li class="list-item">some items</li>
+      <li class="list-item">some items</li>
+    </ul>
+
+    <h2>Another lists</h2>
+    <div class="lists">
+      <div class="item">my section</div>
+      <div class="item">my section</div>
+      <div class="item">my section</div>
+    </div>
+
+    <h2>Another Lists</h2>
+    <ul class="another-lists">
+      <li class="list">another list-one</li>
+      <li class="list">another list-one</li>
+      <li class="list">another list-one</li>
+      <li class="list">another list-one</li>
+    </ul>
+
+    <!-- get element by tagname -->
+    <section class="paragraphs">
+      <p class="paragrap">Lorem ipsum dolor sit amet.</p>
+      <p class="paragrap">Lorem ipsum dolor sit amet.</p>
+      <p class="paragrap">Lorem ipsum dolor sit amet.</p>
+      <p class="paragrap">Lorem ipsum dolor sit amet.</p>
+    </section>
+
+    <!-- get element by querySelector() -->
+
+    <section id="mycontent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+      dignissimos dolores ipsum, quas magni illum recusandae qui expedita eius
+      asperiores!
+    </section>
+    <section class="my-details">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, autem
+      officiis. Deserunt aut dolore dolores minus, consectetur reiciendis quod
+      labore?
+    </section>
+
+    <!-- get element by querySelectorAll() -->
+    <section class="my-note-wrapper">
+      <section class="my-note">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+        dignissimos dolores consequuntur placeat officia earum.
+      </section>
+      <section class="my-note">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+        dignissimos dolores consequuntur placeat officia earum.
+      </section>
+      <section class="my-note">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+        dignissimos dolores consequuntur placeat officia earum.
+      </section>
+      <section class="my-note">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+        dignissimos dolores consequuntur placeat officia earum.
+      </section>
+    </section>
 
     <script src="./app.js"></script>
   </body>
