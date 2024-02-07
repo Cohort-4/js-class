@@ -79,10 +79,10 @@ console.log("sliceMyFavoriteFood", sliceMyFavoriteFood);
 /**
  * Methods in an Array
  * .split()
- * Split a string into substrings using the specified separator 
+ * Split a string into substrings using the specified separator
  * and return them as an array.
- * @param separator — A string that identifies character or characters 
- * to use in separating the string. If omitted, a single-element array 
+ * @param separator — A string that identifies character or characters
+ * to use in separating the string. If omitted, a single-element array
  * containing the entire string is returned.
  */
 
@@ -98,8 +98,8 @@ console.log("splitMyNameAgain = ", splitMyNameAgain);
  * Methods in an Array
  * .join()
  * Adds all the elements of an array into a string, separated by the specified separator string.
- * @param separator — A string used to separate one element of the 
- * array from the next in the resulting string. 
+ * @param separator — A string used to separate one element of the
+ * array from the next in the resulting string.
  * If omitted, the array elements are separated with a comma.
  */
 let joinMyName = splitMyNameAgain.join();
@@ -153,16 +153,16 @@ console.log(myTraineeList.includes("Khalid".toLowerCase(), 0)); // true
 
 const countries = ["Nigeria", "Togo", "Ghana", "Chad", "Tunsia", "Haiti"];
 console.log("countriesResult", countries.splice(0, 3)); // [ 'Nigeria', 'Togo', 'Ghana ] elements deleted.
-console.log('countries ', countries )
+console.log("countries ", countries);
 
 /**
  * .sort()
  * Sorts an array in place. This method mutates the array a
  * nd returns a reference to the same array.
- * @param compareFn Function used to determine the order of the elements. 
- * It is expected to return a negative value if the first argument 
- * is less than the second argument, zero if they're equal, 
- * and a positive value otherwise. If omitted, the elements 
+ * @param compareFn Function used to determine the order of the elements.
+ * It is expected to return a negative value if the first argument
+ * is less than the second argument, zero if they're equal,
+ * and a positive value otherwise. If omitted, the elements
  * are sorted in ascending, ASCII character order.
  */
 const months = ["March", "Jan", "Feb", "Dec"];
@@ -211,3 +211,33 @@ const twoWordEach = [
 ];
 const getKhalid = twoWordEach[1][1];
 console.log(getKhalid);
+
+/**
+ * Convert string to array
+ *
+ */
+
+const names = ["hello", "tolu", "mide"];
+const str = names.toString();
+console.log(str);
+
+console.log(typeof str);
+
+/**
+ * array to string
+ */
+const arr = str.split(",");
+console.log(arr);
+
+const joined = arr.join();
+console.log(joined);
+
+console.log(names.join(""));
+console.log(names.join("-"));
+console.log(names.join(" "));
+console.log(names.join(", "));
+
+/**
+ * typeof operator
+ * Determines a variable data type
+ */
