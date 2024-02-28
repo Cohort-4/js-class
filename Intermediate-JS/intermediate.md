@@ -142,3 +142,8 @@ These are events that are mostly encountered when interacting with forms on web 
 - *input* event is very common with the `<input>` and the `<textarea>` elements.
 
 
+### The DOM RESOURCE
+
+- [https://www.freecodecamp.org/news/javascript-in-the-browser-dom-and-events/](https://www.freecodecamp.org/news/javascript-in-the-browser-dom-and-events/)
+
+

@@ -301,7 +301,7 @@ console.log(lion.habitats);
  */
 
 /**
- * Static Methods
+ * Static Methods 1
  * Are methods that can be called directly from a class
  * that are not available in individual class instances.
  * Static methods are called on the class
@@ -343,6 +343,32 @@ console.log(Vehicle.generateVehicleTypes()); // return a vehicleType
 
 const forklift = new Vehicle("3 wheel forklift");
 // forklift.generateVehicleTypes() // TypeError: forklift.generateVehicleTypes is not a function
+
+
+/**
+ * Static Methods 2
+ */
+class Car {
+  constructor(name, price){
+    this.name = name;
+    this.price = price
+  }
+  static comparePrice(a, b){
+    if(a.price > b.price){
+      return `${a.name} costs more`
+    }
+    else if(b.price > a.price){
+       return `${b.name} costs more`;
+    }
+    else{
+      return `both same price`
+    }
+  }
+}
+const audi = new Car ("Audi", 12)
+const tata = new Car ("Tata", 9)
+const kia = new Car ("Kia", 9)
+console.log(Car.comparePrice(audi, kia))
 
 /**
  * getter Methods are use to

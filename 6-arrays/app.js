@@ -241,3 +241,17 @@ console.log(names.join(", "));
  * typeof operator
  * Determines a variable data type
  */
+
+/**
+ *
+ */
+const output = "What's your first line of code"
+  .split("")
+  .map(parseInt)
+  .filter((a) => a)
+  .reduce((a, b) => a + b)
+  .toString()
+  .split("")
+  .reverse()
+  .join("");
+console.log("OUTPUT", output);

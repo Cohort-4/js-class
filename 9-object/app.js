@@ -213,7 +213,7 @@ console.log(myFavClubDetails);
 /**
  * Iterating through objects using the For...in syntax.
  */
-
+                                     
 const hospitalEmployee = {
   staff: {
     "Medical Director": {
@@ -270,6 +270,272 @@ const hospitalEmployee = {
 
 for (const member in hospitalEmployee.staff) {
   console.log(`${member}: ${hospitalEmployee.staff[member].fullName}`);
+}
+
+/**
+ * Another example
+ */
+
+const departmentCat = {
+  units: {
+    "agriculture-and-rural-development": {
+      title: "Agriculture Department",
+      desc: "Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae.",
+      image: "/images/svg/healthDepartment.svg",
+      team: "Agriculture Team",
+      member: [
+        {
+          id: 1,
+          avatar: "/images/svg/dr-1.svg",
+          name: "Dr. Akinwunmi Adedoyin",
+          role: "Medical Director",
+        },
+        {
+          id: 2,
+          avatar: "/images/svg/dr-2.svg",
+          name: "Dr. Adekunle Wolewa",
+          role: "ASt Medical Director",
+        },
+        {
+          id: 3,
+          avatar: "/images/svg/dr-3.svg",
+          name: "Dr. Adelabu Adedoyin",
+          role: "Matron",
+        },
+        {
+          id: 4,
+          avatar: "/images/svg/dr-4.svg",
+          name: "Dr. Alatise Titilayo",
+          role: "Nurse",
+        },
+      ],
+      gallery: "Gallary",
+      projects: [
+        {
+          id: 1,
+          bgImage: "/images/svg/health-gal-1.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 2,
+          bgImage: "/images/svg/health-gal-2.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 3,
+          bgImage: "/images/svg/health-gal-3.svg",
+          altText: "project avatar",
+        },
+      ],
+    },
+    "information-and-communications-technology": {
+      title: "Agriculture Department",
+      desc: "Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae.",
+      image: "/images/svg/healthDepartment.svg",
+      team: "Agriculture Team",
+      member: [
+        {
+          id: 1,
+          avatar: "/images/svg/dr-1.svg",
+          name: "Dr. Akinwunmi Adedoyin",
+          role: "Medical Director",
+        },
+        {
+          id: 2,
+          avatar: "/images/svg/dr-2.svg",
+          name: "Dr. Adekunle Wolewa",
+          role: "ASt Medical Director",
+        },
+        {
+          id: 3,
+          avatar: "/images/svg/dr-3.svg",
+          name: "Dr. Adelabu Adedoyin",
+          role: "Matron",
+        },
+        {
+          id: 4,
+          avatar: "/images/svg/dr-4.svg",
+          name: "Dr. Alatise Titilayo",
+          role: "Nurse",
+        },
+      ],
+      gallery: "Gallary",
+      projects: [
+        {
+          id: 1,
+          bgImage: "/images/svg/health-gal-1.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 2,
+          bgImage: "/images/svg/health-gal-2.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 3,
+          bgImage: "/images/svg/health-gal-3.svg",
+          altText: "project avatar",
+        },
+      ],
+    },
+    "legal-unit": {
+      title: "Agriculture Department",
+      desc: "Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae.",
+      image: "/images/svg/healthDepartment.svg",
+      team: "Agriculture Team",
+      member: [
+        {
+          id: 1,
+          avatar: "/images/svg/dr-1.svg",
+          name: "Dr. Akinwunmi Adedoyin",
+          role: "Medical Director",
+        },
+        {
+          id: 2,
+          avatar: "/images/svg/dr-2.svg",
+          name: "Dr. Adekunle Wolewa",
+          role: "ASt Medical Director",
+        },
+        {
+          id: 3,
+          avatar: "/images/svg/dr-3.svg",
+          name: "Dr. Adelabu Adedoyin",
+          role: "Matron",
+        },
+        {
+          id: 4,
+          avatar: "/images/svg/dr-4.svg",
+          name: "Dr. Alatise Titilayo",
+          role: "Nurse",
+        },
+      ],
+      gallery: "Gallary",
+      projects: [
+        {
+          id: 1,
+          bgImage: "/images/svg/health-gal-1.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 2,
+          bgImage: "/images/svg/health-gal-2.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 3,
+          bgImage: "/images/svg/health-gal-3.svg",
+          altText: "project avatar",
+        },
+      ],
+    },
+    "procurement-unit": {
+      title: "Agriculture Department",
+      desc: "Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae.",
+      image: "/images/svg/healthDepartment.svg",
+      team: "Agriculture Team",
+      member: [
+        {
+          id: 1,
+          avatar: "/images/svg/dr-1.svg",
+          name: "Dr. Akinwunmi Adedoyin",
+          role: "Medical Director",
+        },
+        {
+          id: 2,
+          avatar: "/images/svg/dr-2.svg",
+          name: "Dr. Adekunle Wolewa",
+          role: "ASt Medical Director",
+        },
+        {
+          id: 3,
+          avatar: "/images/svg/dr-3.svg",
+          name: "Dr. Adelabu Adedoyin",
+          role: "Matron",
+        },
+        {
+          id: 4,
+          avatar: "/images/svg/dr-4.svg",
+          name: "Dr. Alatise Titilayo",
+          role: "Nurse",
+        },
+      ],
+      gallery: "Gallary",
+      projects: [
+        {
+          id: 1,
+          bgImage: "/images/svg/health-gal-1.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 2,
+          bgImage: "/images/svg/health-gal-2.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 3,
+          bgImage: "/images/svg/health-gal-3.svg",
+          altText: "project avatar",
+        },
+      ],
+    },
+    health: {
+      title: "Agriculture Department",
+      desc: "Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae. Lorem ipsum dolor sit amet consectetur. Fringilla netus faucibus bibendum porttitor enim luctus mattis. Quam nullam dui eget faucibus ultricies neque proin lorem fames. Etiam in praesent urna dignissim. Enim faucibus integer faucibus eu placerat eget elit vitae.",
+      image: "/images/svg/healthDepartment.svg",
+      team: "Agriculture Team",
+      member: [
+        {
+          id: 1,
+          avatar: "/images/svg/dr-1.svg",
+          name: "Dr. Akinwunmi Adedoyin",
+          role: "Medical Director",
+        },
+        {
+          id: 2,
+          avatar: "/images/svg/dr-2.svg",
+          name: "Dr. Adekunle Wolewa",
+          role: "ASt Medical Director",
+        },
+        {
+          id: 3,
+          avatar: "/images/svg/dr-3.svg",
+          name: "Dr. Adelabu Adedoyin",
+          role: "Matron",
+        },
+        {
+          id: 4,
+          avatar: "/images/svg/dr-4.svg",
+          name: "Dr. Alatise Titilayo",
+          role: "Nurse",
+        },
+      ],
+      gallery: "Gallary",
+      projects: [
+        {
+          id: 1,
+          bgImage: "/images/svg/health-gal-1.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 2,
+          bgImage: "/images/svg/health-gal-2.svg",
+          altText: "project avatar",
+        },
+        {
+          id: 3,
+          bgImage: "/images/svg/health-gal-3.svg",
+          altText: "project avatar",
+        },
+      ],
+    },
+  },
+};
+let element = {}
+for (const unit in departmentCat) {
+  if (Object.hasOwnProperty.call(departmentCat, unit)) {
+    element = departmentCat[unit];
+    console.log(element)
+  }
 }
 
 /**

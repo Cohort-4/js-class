@@ -2,7 +2,7 @@
 
 /**
  * Object
- * Objects store collections of key-value pairs.
+ * Objects store collections of key-value pairs known as property
  * composed of comma-separated key-value pairs
  * surrounded by curly braces {}.
  * objects are containers storing related data and functionality
