@@ -344,31 +344,49 @@ console.log(Vehicle.generateVehicleTypes()); // return a vehicleType
 const forklift = new Vehicle("3 wheel forklift");
 // forklift.generateVehicleTypes() // TypeError: forklift.generateVehicleTypes is not a function
 
-
 /**
  * Static Methods 2
  */
 class Car {
-  constructor(name, price){
+  constructor(name, price) {
     this.name = name;
-    this.price = price
+    this.price = price;
   }
-  static comparePrice(a, b){
-    if(a.price > b.price){
-      return `${a.name} costs more`
-    }
-    else if(b.price > a.price){
-       return `${b.name} costs more`;
-    }
-    else{
-      return `both same price`
+  static comparePrice(a, b) {
+    if (a.price > b.price) {
+      return `${a.name} costs more`;
+    } else if (b.price > a.price) {
+      return `${b.name} costs more`;
+    } else {
+      return `both same price`;
     }
   }
 }
-const audi = new Car ("Audi", 12)
-const tata = new Car ("Tata", 9)
-const kia = new Car ("Kia", 9)
-console.log(Car.comparePrice(audi, kia))
+const audi = new Car("Audi", 12);
+const tata = new Car("Tata", 9);
+const kia = new Car("Kia", 9);
+console.log(Car.comparePrice(audi, kia));
+
+/**
+ * Static Methods 3
+ */
+
+class Dinosaur {
+  static numberOfDinosaurs = 0;
+  constructor(species, diet) {
+    this.species = species;
+    this.diet = diet;
+    Dinosaur.numberOfDinosaurs++;
+  }
+  static getNumberOfDinosaur() {
+    return Dinosaur.numberOfDinosaurs;
+  }
+}
+const dino1 = new Dinosaur("Tyrannosaurus", "Carnivore");
+const dino2 = new Dinosaur("Triceratops", "Herbivore");
+
+const numberOfDinosaurs = Dinosaur.getNumberOfDinosaur(); // 2
+console.log(numberOfDinosaurs);
 
 /**
  * getter Methods are use to
